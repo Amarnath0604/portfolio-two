@@ -1,10 +1,8 @@
 import { PageHeader, PageHeaderHeading } from "@/components/page-header";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import { CircularTestimonialsDemo } from "./Testimonial";
-import { Separator } from "@/components/ui/separator";
 import AboutMeSummary from "./MySummary";
-import MyHeadLine, { AnimatedTextCycleDemo, GooeyTextDemo } from "./MyHeading";
-import { Car } from "lucide-react";
+import MyHeadLine, { AnimatedTextCycleDemo } from "./MyHeading";
 
 export default function Dashboard() {
     return (
