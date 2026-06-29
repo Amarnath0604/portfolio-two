@@ -1,6 +1,8 @@
 import TimeLine_01 from '@/components/release-time-line';
 import FlowArt, { FlowSection } from '../components/story-scroll';
 import AboutMeSummary from './MySummary';
+import { MyProjects } from './MyProjects';
+import { AppFooter } from '@/components/app-footer';
 
 export default function FlowArtDefaultDemo() {
   return (
@@ -10,7 +12,7 @@ export default function FlowArtDefaultDemo() {
         <hr className="my-[1vw] border-none border-t border-black opacity-100" />
         <div>
           <h1
-            className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.95] uppercase tracking-tight"
+            className="text-[clamp(3.3rem,12vw,14rem)] font-bold leading-[0.95] uppercase tracking-tight"
           >
             Hey,
             <br />
@@ -86,7 +88,7 @@ export default function FlowArtDefaultDemo() {
         </div>
         <hr className="my-[2vw] border-none border-t border-white/60" />
         <p className="mt-auto ml-auto max-w-[50ch] text-right text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-          Every feature we build starts with one question — does this serve the artist?
+          Every feature we build starts with one question — does this serve the user?
         </p>
       </FlowSection>
 
@@ -97,13 +99,13 @@ export default function FlowArtDefaultDemo() {
           <h2
             className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
           >
-            Show Up.
+            Show Up &
             <br />
             Stand Out.
           </h2>
         </div>
         <TimeLine_01></TimeLine_01>
-        <hr className="my-[2vw] border-none border-t border-black/60" />
+        <hr className="my-[3vw] border-none border-t border-black/60" />
       </FlowSection>
 
       <FlowSection aria-label="La vision" style={{ backgroundColor: '#1A3DE8', color: '#fff' }}>
@@ -113,64 +115,18 @@ export default function FlowArtDefaultDemo() {
           <h2
             className="text-[clamp(3.5rem,12vw,14rem)] font-bold leading-[0.85] uppercase tracking-tight"
           >
-            Future
+            Projects
             <br />
-            Of
+            Across
             <br />
-            Art
+            Journey
           </h2>
         </div>
         <hr className="my-[2vw] border-none border-t border-white/50" />
-        <p className="max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-          We&apos;re not just building a platform. We&apos;re building a movement.
-        </p>
-        <hr className="my-[2vw] border-none border-t border-white/50" />
-        <div className="flex flex-wrap gap-[3vw]">
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">10K+</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              Artists from 80 countries already shaping the future with us.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">$2M+</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              Paid directly to creators in our first year. Zero hidden fees.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">100%</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              Artist-owned. Every decision we make starts with the creator.
-            </p>
-          </div>
+        <div className="text-center">
+        <MyProjects></MyProjects>
         </div>
         <hr className="my-[2vw] border-none border-t border-white/50" />
-        <p className="max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-          The art world has been broken for decades. Galleries take 50%. Algorithms bury talent.
-          We&apos;re here to change that — permanently.
-        </p>
-        <hr className="my-[2vw] border-none border-t border-white/50" />
-        <div className="flex flex-wrap gap-[3vw]">
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Open access</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              No invite codes. No waiting lists. If you make art, you belong here.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Global reach</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              Your work seen in 120+ countries from day one.
-            </p>
-          </div>
-          <div className="min-w-[180px] flex-1">
-            <p className="mb-2 text-sm font-bold uppercase tracking-wider">Artist-first economics</p>
-            <p className="text-[clamp(0.85rem,1.3vw,1.05rem)] leading-relaxed opacity-75">
-              You keep 90% of every sale. The remaining 10% funds the platform and the mission.
-            </p>
-          </div>
-        </div>
       </FlowSection>
 
       <FlowSection aria-label="Nous rejoindre" style={{ backgroundColor: '#000', color: '#fff' }}>
@@ -189,9 +145,9 @@ export default function FlowArtDefaultDemo() {
         </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
         <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
-          Take control of your creative journey. Join now and let&apos;s shape the future of the art
-          world together.
+          Catch up with me to build something stronger and smarter.
         </p>
+        <AppFooter />
       </FlowSection>
     </FlowArt>
   );
