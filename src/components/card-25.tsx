@@ -8,6 +8,11 @@ export interface Stat {
   label: string;
 }
 
+type CSSVars = React.CSSProperties & {
+  "--tx"?: string;
+  "--r"?: string;
+};
+
 export interface AnimatedHikeCardProps {
   title: string;
   images: string[];
@@ -48,14 +53,14 @@ export const AnimatedHikeCard = React.forwardRef<
                 // On hover, apply transforms using the CSS variables defined in `style`
                 "group-hover:translate-x-[var(--tx)] group-hover:rotate-[var(--r)]"
               )}
-              style={{
-                // Set initial transform for the stacked look
-                transform: `translateX(${index * 32}px)`,
-                // Define CSS variables for the hover state transforms
-                '--tx': `${index * 80}px`,
-                '--r': `${index * 5 - 5}deg`,
-                zIndex: images.length - index,
-              }}
+              style={
+                {
+                  transform: `translateX(${index * 32}px)`,
+                  "--tx": `${index * 80}px`,
+                  "--r": `${index * 5 - 5}deg`,
+                  zIndex: images.length - index,
+                } as CSSVars
+              }
             >
               <img
                 src={src}
