@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Box, House, PanelsTopLeft } from "lucide-react";
-import BeSpokeDesignsProject, { CountriesDeck, SsrInfraProject } from "./ComingSoon";
+import BeSpokeDesignsProject, { CountriesDeck, SsrInfraProject, Zap6Project } from "./ComingSoon";
 
 function MyProjects() {
   return (
@@ -52,7 +52,7 @@ function MyProjects() {
         <div className="md:flex gap-[2vw] min-h-min">
           <BeSpokeDesignsProject></BeSpokeDesignsProject>
           <SsrInfraProject></SsrInfraProject>
-          <SsrInfraProject></SsrInfraProject>
+          <Zap6Project></Zap6Project>
         </div>
       </TabsContent>
       <TabsContent value="tab-2" className="min-h-min">

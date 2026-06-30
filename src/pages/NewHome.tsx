@@ -3,6 +3,8 @@ import FlowArt, { FlowSection } from '../components/story-scroll';
 import AboutMeSummary from './MySummary';
 import { MyProjects } from './MyProjects';
 import { AppFooter } from '@/components/app-footer';
+import { ProjectCards } from '@/components/ui/animated-project-cards';
+import { DemoProjects } from './TestProject';
 
 export default function FlowArtDefaultDemo() {
   return (
@@ -105,6 +107,8 @@ export default function FlowArtDefaultDemo() {
           </h2>
         </div>
         <TimeLine_01></TimeLine_01>
+
+        {/* <DemoProjects></DemoProjects> */}
         <hr className="my-[3vw] border-none border-t border-black/60" />
       </FlowSection>
 
