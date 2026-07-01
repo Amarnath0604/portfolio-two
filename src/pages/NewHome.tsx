@@ -5,6 +5,7 @@ import { MyProjects } from './MyProjects';
 import { AppFooter } from '@/components/app-footer';
 import { ProjectCards } from '@/components/ui/animated-project-cards';
 import { DemoProjects } from './TestProject';
+import { AppleStyleDock } from './SocialIcons';
 
 export default function FlowArtDefaultDemo() {
   return (
@@ -148,9 +149,10 @@ export default function FlowArtDefaultDemo() {
           </h2>
         </div>
         <hr className="my-[2vw] border-none border-t border-black/60" />
-        <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
+        <AppleStyleDock />
+        {/* <p className="mt-auto max-w-[50ch] text-[clamp(1rem,2.5vw,2rem)] font-normal leading-relaxed">
           Catch up with me to build something stronger and smarter.
-        </p>
+        </p> */}
         <AppFooter />
       </FlowSection>
     </FlowArt>
