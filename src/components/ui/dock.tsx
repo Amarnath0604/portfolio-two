@@ -41,6 +41,10 @@ type DockLabelProps = {
   className?: string;
   children: React.ReactNode;
 };
+type DockChildProps = {
+  width?: MotionValue<number>;
+  isHovered?: MotionValue<number>;
+};
 type DockIconProps = {
   className?: string;
   children: React.ReactNode;
@@ -160,7 +164,11 @@ function DockItem({ children, className, onClick }: DockItemProps) {
       aria-haspopup='true'
     >
       {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement, { width, isHovered })
+        // Ensure proper typing for cloned child props so width and isHovered are allowed
+        cloneElement(child as React.ReactElement<DockChildProps>, {
+          width,
+          isHovered,
+        })
       )}
     </motion.div>
   );
